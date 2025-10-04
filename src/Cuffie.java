@@ -30,4 +30,10 @@ public class Cuffie extends Prodotto {
     public void setIsWireless(boolean IsWireless){
         this.IsWireless = IsWireless;
     }
+
+    @Override
+    public String extendedName(){
+        
+        return String.format("Hai inserito al carrello le cuffie: %d-%s", getCode(), getName().replace(" ", "-"));
+    }
 }

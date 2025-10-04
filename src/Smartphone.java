@@ -25,4 +25,10 @@ public class Smartphone extends Prodotto {
     public void setMemory(int memory){
         this.memory = memory;
     }
+
+    @Override
+    public String extendedName(){
+        
+        return String.format("Hai inserito al carrello lo smartphone: %d-%s", getCode(),getName().replace(" ", "-"));
+    }
 }

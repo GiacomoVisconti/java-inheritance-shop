@@ -32,4 +32,10 @@ public class Televisori extends Prodotto {
     public void setIsSmart(boolean isSmart){
         this.isSmart = isSmart;
     }
+
+    @Override
+    public String extendedName(){
+        
+        return String.format("Hai inserito al carrello il televisore: %d-%s", getCode(), getName().replace(" ", "-"));
+        }
 }
